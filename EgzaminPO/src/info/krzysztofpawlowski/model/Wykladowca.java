@@ -21,4 +21,8 @@ public class Wykladowca extends Egzaminator {
         return null;
     }
 
+    @Override public Pytanie odpowiedzNaPytanie(Pytanie pytanie) {
+        pytanie.setOdpowiedz("bar");
+        return pytanie;
+    }
 }

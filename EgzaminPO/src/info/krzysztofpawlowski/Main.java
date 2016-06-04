@@ -17,7 +17,7 @@ public class Main {
 	// write your code here
 
         Wykladowca wykladowca = new Wykladowca();
-        ProwadzacyGrupe cwiczeniowiec1 = new ProwadzacyGrupe("JJ");
+        ProwadzacyGrupe cwiczeniowiec1 = new ProwadzacyGrupe("JJ", wykladowca);
 
         List<ProwadzacyGrupe> prowadzacy = new LinkedList<>();
         prowadzacy.add(cwiczeniowiec1);
