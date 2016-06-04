@@ -5,6 +5,7 @@ package info.krzysztofpawlowski.model;
  */
 public class Pytanie {
 
+
     private String pytanie;
     private String odpowiedz;
 

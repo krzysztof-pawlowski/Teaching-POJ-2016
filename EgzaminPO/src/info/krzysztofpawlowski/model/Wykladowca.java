@@ -18,7 +18,7 @@ public class Wykladowca extends Egzaminator {
     }
 
     public List<OcenaRozwiazania> dajDoSprawdzenia(List<Rozwiazanie> rozwiazania, List<ProwadzacyGrupe> prowadzacy) {
-
+        return null;
     }
 
 }

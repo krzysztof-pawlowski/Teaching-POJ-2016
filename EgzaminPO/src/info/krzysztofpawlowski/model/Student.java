@@ -1,5 +1,6 @@
 package info.krzysztofpawlowski.model;
 
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -10,6 +11,9 @@ public class Student {
     private String imie;
     private String nazwisko;
     private ProwadzacyGrupe prowadzacyGrupe;
+    private List<MaterialyPomocnicze> materialyPomocnicze;
+    private List<Gotowiec> gotowce;
+    private List<Notatki> notatki;
 
     private List<Egzaminator> egzaminatorzy;
 
@@ -40,5 +44,15 @@ public class Student {
 
     private void rozwiazEgzamin(Zadanie zadanie, Rozwiazanie rozwiazanie) {
 
+    }
+
+    private List<Gotowiec> getGotowce() {
+        List<Gotowiec> gotowce = new LinkedList<>();
+        for (MaterialyPomocnicze material : materialyPomocnicze) {
+            if (material instanceof Gotowiec) {
+                gotowce.add((Gotowiec) material);
+            }
+        }
+        return gotowce;
     }
 }

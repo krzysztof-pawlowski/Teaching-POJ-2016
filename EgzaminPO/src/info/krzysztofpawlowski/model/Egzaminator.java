@@ -1,6 +1,6 @@
 package info.krzysztofpawlowski.model;
 
-public class Egzaminator {
+public abstract class Egzaminator {
 
     public Pytanie odpowiedzNaPytanie(Pytanie pytanie) {
         pytanie.setOdpowiedz("foo");
